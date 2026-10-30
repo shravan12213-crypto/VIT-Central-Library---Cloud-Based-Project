@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Rental Form - VIT Pune Library</title>
+    <link rel="stylesheet" href="../assets/css/book-rental.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="header-content">
+            <img src="https://uploads.onecompiler.io/43z634ggp/43z6355td/VIT-Pune-Logo.png" alt="VIT Logo" class="logo">
+            <div class="header-text">
+                <h1>Book Rental Form</h1>
+                <p class="subtitle-text">Vishwakarma Institute of Technology, Pune</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+   <nav>
+        <div class="nav-container">
+            <a href="../index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="book-rental.html">Book Rental</a>
+            <a href="readers-club.html">Readers Club</a>
+            <a href="contact.html">Contact</a> <a href="https://www.vit.edu/" target="_blank">VIT Website</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="form-main">
+            <div class="form-section">
+                <h2>📚 Book Rental Request Form</h2>
+                <p class="subtitle">
+                    Please fill out the details below. Note: This is a placeholder form. Actual rental requires physical verification at the circulation desk.
+                </p>
+
+                <form>
+                    <div class="form-group">
+                        <label for="student_name">Student Name:</label>
+                        <input
+                            type="text"
+                            id="student_name"
+                            name="student_name"
+                            placeholder="Enter your full name"
+                            required
+                        />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="prn_no">PRN Number:</label>
+                        <input
+                            type="text"
+                            id="prn_no"
+                            name="prn_no"
+                            placeholder="Enter your PRN number"
+                            required
+                        />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="book_title">Book Title:</label>
+                        <input
+                            type="text"
+                            id="book_title"
+                            name="book_title"
+                            placeholder="Enter the book title"
+                            required
+                        />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="book_code">Book Code:</label>
+                        <input
+                            type="text"
+                            id="book_code"
+                            name="book_code"
+                            placeholder="Enter the book code"
+                            required
+                        />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="rental_period">Desired Rental Period (Days):</label>
+                        <input
+                            type="number"
+                            id="rental_period"
+                            name="rental_period"
+                            min="1"
+                            max="10"
+                            placeholder="Max 10 days"
+                            required
+                        />
+                    </div>
+
+                    <div class="form-submit">
+                        <input
+                            type="submit"
+                            value="📖 Submit Rental Request"
+                            class="submit-button"
+                        />
+                    </div>
+                </form>
+            </div>
+
+            <!-- Guidelines Card -->
+            <div class="card" style="margin-top: 30px;">
+                <h2>📋 Rental Guidelines</h2>
+                <div class="notice-board">
+                    <ul>
+                        <li><strong>Eligibility:</strong> Valid VIT ID card must be presented</li>
+                        <li><strong>Maximum Books:</strong> FY Students can borrow 2 books at a time</li>
+                        <li><strong>Loan Period:</strong> 10 days per book</li>
+                        <li><strong>Renewal:</strong> Books may be renewed once if no reservations pending</li>
+                        <li><strong>Late Fees:</strong> ₹1 per day for overdue books</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p class="footer-main">© 2025 Central Library, VIT Pune</p>
+        <p class="footer-sub">Empowering minds through knowledge</p>
+    </footer>
+     <script src="../assets/js/rental-form.js"></script>
+</body>
+</html>

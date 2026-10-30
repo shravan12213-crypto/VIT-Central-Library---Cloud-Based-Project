@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Login - VIT Pune Library</title>
+        <link rel="stylesheet" href="../assets/css/login.css" />
+    </head>
+    <body>
+       <div class="video-background">
+            <video autoplay muted loop playsinline>
+                 <source src="../assets/videos/background.mp4" type="video/mp4">
+            </video>
+        <div class="video-overlay"></div>
+</div>
+        <header>
+            <div>
+                <img
+                    src="https://uploads.onecompiler.io/43z634ggp/43z6355td/VIT-Pune-Logo.png"
+                    alt="VIT Logo"
+                    width="70"
+                    height="70"
+                />
+                <h1>Central Library - VIT Pune</h1>
+            </div>
+        </header>
+
+        <main class="login-main">
+            <div class="form-container" id="login-container">
+                <h2>Student Login</h2>
+                <form id="login-form">
+                    <div class="form-group">
+                        <label for="login-email">Email or PRN:</label>
+                        <input type="text" id="login-email" name="login-email" placeholder="Enter your email or PRN" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="login-password">Password:</label>
+                        <input type="password" id="login-password" name="login-password" placeholder="Enter your password" required />
+                    </div>
+                    <div class="form-submit">
+                        <button type="submit" class="submit-button">Login</button>
+                    </div>
+                </form>
+                <p class="toggle-link">
+                    Don't have an account? <a href="#" id="show-signup">Sign Up</a>
+                </p>
+            </div>
+
+            <div class="form-container" id="signup-container" style="display: none">
+                <h2>Create Account</h2>
+                <form id="signup-form">
+                    <div class="form-group">
+                        <label for="signup-name">Full Name:</label>
+                        <input type="text" id="signup-name" name="signup-name" placeholder="Enter your full name" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="signup-prn">PRN Number:</label>
+                        <input type="text" id="signup-prn" name="signup-prn" placeholder="Enter your PRN" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="signup-email">Email Address:</label>
+                        <input type="email" id="signup-email" name="signup-email" placeholder="Enter your email" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="signup-password">Create Password:</label>
+                        <input type="password" id="signup-password" name="signup-password" placeholder="Create a password (min 6 characters)" required />
+                    </div>
+                    <div class="form-submit">
+                        <button type="submit" class="submit-button">Sign Up</button>
+                    </div>
+                </form>
+                <p class="toggle-link">
+                    Already have an account? <a href="#" id="show-login">Login</a>
+                </p>
+            </div>
+            
+            <div id="message-box" class="message-box" style="display: none;"></div>
+        </main>
+
+        <footer>
+            <p>© 2025 Central Library, VIT Pune. All Rights Reserved.</p>
+        </footer>
+
+        <script src="../assets/js/auth.js"></script>
+    </body>
+</html>

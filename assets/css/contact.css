@@ -1,0 +1,157 @@
+/* Using your existing design system */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --vit-blue: #004a99;
+  --vit-blue-dark: #003366;
+  --accent-gold: #ffd700;
+  --light-gray: #f4f7f6;
+  --text-color: #333;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--light-gray);
+}
+
+.hero-section {
+  background: linear-gradient(135deg, #004a99 0%, #0066cc 100%);
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.logo {
+  width: 80px;
+  height: 80px;
+}
+.header-text h1 {
+  font-size: 2.2em;
+  margin-bottom: 5px;
+}
+
+nav {
+  background: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+nav a {
+  color: var(--vit-blue);
+  text-decoration: none;
+  padding: 15px 25px;
+  font-weight: 600;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+nav a:hover,
+nav a.active {
+  background: var(--vit-blue);
+  color: white;
+}
+/* ===========================
+   Active Page Highlight
+   =========================== */
+
+/* This targets the link with class="active" */
+nav a.active {
+    background-color: #004a99; /* VIT Blue background */
+    color: white;              /* White text */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Optional: Slight shadow */
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.form-section {
+  background: white;
+  border-radius: 8px;
+  padding: 30px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.form-section h2 {
+  color: var(--vit-blue);
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  border-bottom: 3px solid var(--vit-blue);
+  padding-bottom: 10px;
+}
+.subtitle {
+  font-size: 1em;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: var(--vit-blue-dark);
+}
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1em;
+}
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--vit-blue);
+}
+
+.submit-button {
+  width: 100%;
+  padding: 15px;
+  background-color: var(--vit-blue);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.submit-button:hover {
+  background-color: var(--vit-blue-dark);
+}
+
+footer {
+  background: #2d2d2d;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 40px;
+}
